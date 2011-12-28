@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/set_system_prop_cb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Set javax.net.ssl.trustStore" />
+
+    <CheckBox
+        android:id="@+id/use_client_auth_cb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Use client authentication" />
+
+    <Button
+        android:id="@+id/dump_trusted_certs_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Dump trusted certs" />
+
+    <Button
+        android:id="@+id/default_connect_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Default Connect" />
+
+    <Button
+        android:id="@+id/http_client_ssl_sock_factory_connect_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HttpClient SSLSocketFactory Connect" />
+
+    <Button
+        android:id="@+id/http_client_connect_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HttpClient Connect" />
+
+    <Button
+        android:id="@+id/url_conn_connect_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="HttpsURLConnection Connect" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true" >
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>
