@@ -1,0 +1,20 @@
+Custom Android certificate trust store sample app.
+
+Sample app for the blog post at
+http://nelenkov.blogspot.com/2011/12/using-custom-certificate-trust-store-on.html
+
+How to build and use:
+
+1. Download the latest Bouncy Castle provider jar to this directory.
+2. Edit the importcert.sh script if necessary.
+3. Copy a PKCS#12 file to res/raw/mykeystore.pfx.
+4. Copy a CA certificate in PEM format to this directory.
+5. Run the conversion script to create a key store file in res/raw:
+
+$ ./importcert.sh cacert.pem
+
+6. Import the project in Eclipse.
+7. Edit MainActivity.java and set CLIENT_AUTH_URL and SERVER_AUTH_URL to 
+valid URLs (e.g., on your test server).
+8. Build and run.
+
