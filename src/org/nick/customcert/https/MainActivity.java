@@ -694,7 +694,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
         try {
             keyStore = KeyStore.getInstance("PKCS12");
-            InputStream in = getResources().openRawResource(R.raw.mytruststore);
+            InputStream in = getResources().openRawResource(R.raw.mykeystore);
             try {
                 keyStore.load(in, KEYSTORE_PASSWORD.toCharArray());
             } finally {
